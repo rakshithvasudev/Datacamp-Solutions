@@ -5,7 +5,7 @@ Now that you know the basics behind HTTP GET requests, it's time to perform some
 In the next exercise, you'll extract the HTML itself. Right now, however, you are going to package and send the request and then catch the response.
 
 INSTRUCTIONS
-
+ 
 Import the functions urlopen and Request from the subpackage urllib.request.
 Package the request to the url "http://www.datacamp.com/teach/documentation" using the function Request() and assign it to request.
 Send the request and catch the response in the variable response with the function urlopen().
@@ -18,14 +18,17 @@ from urllib.request import urlopen, Request
 # Specify the url
 url = "http://www.datacamp.com/teach/documentation"
 
-# This packages the request: request
+# This packages the request
 request = Request(url)
 
 # Sends the request and catches the response: response
 response = urlopen(request)
 
-# Print the datatype of response
-print(type(response))
+# Extract the response: html
+html = response.read()
+
+# Print the html
+print(html)
 
 # Be polite and close the response!
 response.close()
