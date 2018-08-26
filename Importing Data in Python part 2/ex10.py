@@ -34,7 +34,8 @@ guido_title = soup.title
 print(guido_title)
 
 # Get Guido's text: guido_text
-guido_text = guido_title.get_text()
+guido_text = soup.get_text()
 
 # Print Guido's text to the shell
 print(guido_text)
+
