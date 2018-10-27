@@ -23,9 +23,9 @@ import re
 prog = re.compile('\d{3}-\d{3}-\d{4}')
 
 # See if the pattern matches
-result = re.match(prog,'123-456-7890')
+result = prog.match('123-456-7890')
 print(bool(result))
 
 # See if the pattern matches
-result2 = re.match(prog,'1123-456-7890')
+result2 = prog.match('1123-456-7890')
 print(bool(result2))
