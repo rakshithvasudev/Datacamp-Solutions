@@ -1,13 +1,13 @@
 """
-Import matplotlib.pyplot as plt.
-Create a histogram of the 'Existing Zoning Sqft' column. Rotate the axis labels by 70 degrees and use a log scale for both axes.
-Display the histogram using plt.show().
+Using the .boxplot() method of df, create a boxplot of 'initial_cost' across the different values of 'Borough'.
+Display the plot.
 """
-# Import matplotlib.pyplot
+# Import necessary modules
+import pandas as pd
 import matplotlib.pyplot as plt
 
-# Plot the histogram
-df['Existing Zoning Sqft'].plot(kind='hist', rot=70, logx=True, logy=True)
+# Create the boxplot
+df.boxplot(column='initial_cost', by='Borough', rot=90)
 
-# Display the histogram
+# Display the plot
 plt.show()
