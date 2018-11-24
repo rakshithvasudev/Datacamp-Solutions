@@ -9,3 +9,4 @@ ORDER BY birthdate;
 SELECT name,birthdate 
 FROM people
 ORDER BY birthdate;
+
