@@ -10,7 +10,6 @@ SELECT certification, release_year, title
 FROM films
 ORDER BY certification,release_year;
 
-
 SELECT name, birthdate
 FROM people
 ORDER BY name,birthdate;
