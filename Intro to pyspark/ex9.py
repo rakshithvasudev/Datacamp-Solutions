@@ -44,3 +44,5 @@ spark_temp.createOrReplaceTempView("temp")
 
 # Examine the tables in the catalog again
 print(spark.catalog.listTables())
+
+
